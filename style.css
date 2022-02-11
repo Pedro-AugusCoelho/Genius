@@ -1,0 +1,215 @@
+/*RESET PAGE--------------------------------------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: greenyellow;
+    color:#FFF;
+}
+
+
+/*START GAME--------------------------------------------------------------------------------*/
+.start-game{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: 99;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('https://viciados.net/wp-content/uploads/2020/01/wallhaven-13mk9v.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu-game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    background-color: #0D4CE5;
+    border:2px solid #072161;
+    border-radius:10px;
+}
+
+.menu-game h1{
+    margin-bottom: 20px;
+}
+
+.btns{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.title-new{
+    flex: 5;
+}
+
+.Music{
+    flex: 1;
+}
+
+.menu-game p{
+   font-size: 24px;
+   width: 100%;
+   background-color: #072161;
+   border: 5px solid #3160D5;
+   border-radius:10px;
+   padding: 10px;
+   text-align:center;
+   cursor: pointer;
+}
+
+.menu-game p:hover{
+   background-color: #093197;
+   border: 5px solid #2f6aff;
+}
+
+
+/*GAME OVER--------------------------------------------------------------------------------*/
+.game-over{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:0;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('https://img.elo7.com.br/product/main/223330B/papel-de-parede-pastilhas-em-tons-fundo-vermelho-e-branco-papel-de-parede-para-quarto.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu-over{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    background-color: #e60b0b;
+    border:2px solid #721403;
+    border-radius:10px;
+}
+
+.menu-over h1{
+    margin-bottom: 20px;
+}
+
+.menu-over p{
+   font-size: 24px;
+   width: 100%;
+   background-color: #721403;
+   border: 5px solid #c04343;
+   border-radius:10px;
+   padding: 10px;
+   text-align:center;
+   cursor: pointer;
+}
+
+.menu-over p:hover{
+   background-color: #4d0d02;
+   border: 5px solid #bd2c22;
+}
+
+
+
+
+
+
+
+/*GENIUS--------------------------------------------------------------------------------*/
+.main-game{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    height:100vh;
+    width:100vw;
+}
+
+.genius{
+    display: grid;
+    grid-template-areas: 'Cblue Cyellow'
+    'Cred Cgreen';
+    gap:10px;
+    border: 10px solid #FFF;
+    background-color: #FFF;
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+}
+
+.score{
+    font-size:24px;
+    font-weight: bold;
+    margin-bottom:10px;
+    text-transform: uppercase;
+}
+
+.score-end{
+    font-size:22px;
+    font-weight: bold;
+    margin:5px;
+    margin-bottom:20px;
+    text-transform: uppercase;
+}
+
+.blue{
+    grid-area:Cblue;
+    background-color: blue;
+    border-top-left-radius: 100%;
+}
+
+.yellow{
+    grid-area:Cyellow;
+    background-color: yellow;
+    border-top-right-radius: 100%;
+}
+
+.red{
+    grid-area:Cred;
+    background-color: red;
+    border-bottom-left-radius: 100%;
+}
+
+.green{
+    grid-area:Cgreen;
+    background-color: green;
+    border-bottom-right-radius: 100%;
+}
+
+.selected{
+   opacity: 0.5;
+}
+
+.desative{
+    display: none;
+    z-index: 0;
+}
+
+.active{
+    display: flex;
+    z-index: 99;
+}
+
